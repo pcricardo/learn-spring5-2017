@@ -1,4 +1,4 @@
-# learn-spring5-recipe-app
+# learn-spring5-2017
 Spring Boot Recipe Application.
 I use this app to pratice Spring 5.
 Subjects:
