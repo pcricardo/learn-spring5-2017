@@ -9,7 +9,7 @@
     - declare properties in the class that match with the property file. Example: `@Value("${pc.username}")`
     - declare a bean that return the property values
 
-** Bean PropertySourcesPlaceholderConfigurer **
+**Bean PropertySourcesPlaceholderConfigurer**
 
 This bean will mach the values in the property file with the properties in the configuration class
 
@@ -48,7 +48,7 @@ To access, use the code `env.getProperty("USERNAME")`
 
 ### Spring Boot Application.properties
 Spring Boot have a default behavior that is simpler to setup external properties.
-To refactor the previous demos to use the default behavior of Spring Boot, simple follow the following steps:
+To refactor the previous examples to use the default behavior of Spring Boot, simple follow the following steps:
 - move the properties from the properties files to the _application.properties_ file.
 - in the Configuration class
     - remove annotations @PropertySources/@PropertySource
