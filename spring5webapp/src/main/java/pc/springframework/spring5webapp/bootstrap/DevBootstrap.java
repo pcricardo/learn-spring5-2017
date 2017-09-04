@@ -17,7 +17,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     BookRepository bookRepository;
     PublisherRepository publisherRepository;
 
-    //@Autowired //Otrional in Spring 5
+    //@Autowired //Optional in Spring 5
     public DevBootstrap(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
