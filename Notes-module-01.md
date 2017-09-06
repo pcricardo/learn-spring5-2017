@@ -156,7 +156,7 @@ This is useful when we are developing and want some information to test the apli
 
 With Spring Boot it is easy. Just create a class like the following example.
 
-```
+```java
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 @Override
