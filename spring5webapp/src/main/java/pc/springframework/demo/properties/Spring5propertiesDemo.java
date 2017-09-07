@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import pc.springframework.demo.properties.examplebeans.FakeDataSource;
 import pc.springframework.demo.properties.examplebeans.FakeJmsBroker;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class Spring5propertiesDemo {
 
     public static void main(String[] args) {

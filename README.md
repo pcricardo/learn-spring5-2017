@@ -8,6 +8,8 @@ Subjects:
 - Spring Data JPA
 - Spring MVC
 - Thymeleaf
--
+- Bootstrap CSS (v3.3.7)
+- jUnit (unit testing)
+- Circle CI (Continuous Integration)
 
 

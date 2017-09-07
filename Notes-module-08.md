@@ -66,6 +66,7 @@ Project Lombok is under _spring-boot-starter_
 
 ### Using Project Lombok
 **It can be used in 2 ways**
+
 - refactor the existing code
     - the InteliJ will make the changes automatically
     - it is necessary open the class end put the cursor inside the class
@@ -73,11 +74,13 @@ Project Lombok is under _spring-boot-starter_
 
 ### Gotchas with Project Lombok
 **Circular reference with Bidirectional Entity Relationship**
+
 Cause: Lombok can produce StackOverflowError in _hashCode()_ implementation
 Resolution: remove the properties from the implementation of hashCode
 Example: `@EqualsAndHashCode(exclude = {"recipes"})`
 
 **Error: failed to lazily initialize a collection**
+
 Cause: lazily initialize
 Resolution: annotation @Transactional
 
