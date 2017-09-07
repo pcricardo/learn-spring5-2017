@@ -207,7 +207,28 @@ Notes:
 - To change it is necessary add a plugin in POM file
 
 ```XML
-
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.20</version>
+        <configuration>
+            <includes>
+                <include>**/*IT.java</include>
+            </includes>
+            <additionalClasspathElements>
+                <additionalClasspathElement>${basedir}/target/classes</additionalClasspathElement>
+            </additionalClasspathElements>
+            <parallel>none</parallel>
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>integration-test</goal>
+                    <goal>verify</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
 ```
 
 ### Continuous Integration Testing with Circle CI
